@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute com um elemento relativo</title>
+<style>
+        div#principal{
+            border: 3px solid black;
+            width: 400px;
+            height: 400px;
+            margin: auto;
+            position: relative;
+        }
+        div#c1, div#c2{
+            height: 100px;
+            width: 100px;
+             border: 3px solid rgb(216, 4, 4);
+        }
+        div#c1{
+            background-color: blue;
+            position:absolute;
+            bottom: 0;
+            right:0 ;          
+        }
+        div#c2{
+            background-color: yellow;
+        }
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Position absolute</h1>
+    <div id="principal">
+        <div id="c1"></div>
+        <div id="c2"></div>
+    </div>
+    <p>
+        Sabemos que quando o elemento recebe um position absolute, sai do seu fluxo normal do layout e pode ser colocado em qualquer lugar.
+        mas quando eu coloco um position relative em algum elemento pai desse elemento, o elemento absolute vai ficar relativo a esse elemento pai e não ao body.
+    </p>
+</body>
+</html>

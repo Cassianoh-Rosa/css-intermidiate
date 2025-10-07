@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute</title>
+    <style>
+        div#principal{
+            border: 3px solid black;
+            width: 400px;
+            height: 400px;
+            margin: auto;
+        }
+        div#c1, div#c2{
+            height: 100px;
+            width: 100px;
+             border: 3px solid rgb(216, 4, 4);
+        }
+        div#c1{
+            background-color: blue;
+            position:absolute;
+            top: 50%;
+            
+        }
+        div#c2{
+            background-color: yellow;
+        }
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Position absolute</h1>
+    <div id="principal">
+        <div id="c1"></div>
+        <div id="c2"></div>
+    </div>
+    <p>
+        Quando coloco o position absolute em um bloco, o elemento sai do fluxo do layout do site, e posso colocar ele em qualquer lugar do site
+    </p>
+</body>
+</html>

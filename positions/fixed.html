@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute com um elemento relativo</title>
+<style>
+        div#principal{
+            border: 3px solid black;
+            width: 400px;
+            height: 400px;
+            margin: auto;
+        }
+        div#c1, div#c2{
+            height: 100px;
+            width: 100px;
+             border: 3px solid rgb(216, 4, 4);
+        }
+        div#c1{
+            background-color: blue;  
+            position: fixed;      
+        }
+        div#c2{
+            background-color: yellow;
+        }
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Position absolute</h1>
+    <div id="principal">
+        <div id="c1"></div>
+        <div id="c2"></div>
+    </div>
+    <p>
+        Quando coloco um elemento no position fixed, ele sai do fluxo do layout como o absolute msa ele fica fixo nessa posição mesmo se vc rolar a tela.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit a nobis dolores, esse sunt officiis mollitia pariatur quod omnis necessitatibus tempora totam consectetur autem nisi perferendis at veniam quasi eligendi.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti inventore incidunt nemo temporibus cupiditate, facilis suscipit voluptatum accusantium quis eos libero sed at accusamus rerum aliquid commodi fugit quibusdam illum.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est natus fugiat placeat accusamus aperiam autem, saepe vero ipsa facere et. Atque modi ratione error impedit qui. Enim natus ipsum eius?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore alias iste facilis voluptatibus reprehenderit veritatis ipsam neque similique, adipisci odit asperiores corrupti labore atque illo laboriosam, totam enim? Reprehenderit, numquam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea perspiciatis incidunt ad rem nesciunt in corrupti sit! Ipsa veniam fugiat harum eius aliquid dolores suscipit quibusdam corporis aperiam. Accusantium, asperiores.
+
+    </p>
+</body>
+</html>

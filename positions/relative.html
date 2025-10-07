@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relativo</title>
+    <style>
+        div#principal{
+            border: 3px solid black;
+            width: 400px;
+            height: 400px;
+            margin: auto;
+        }
+        div#c1, div#c2{
+            height: 100px;
+            width: 100px;
+             border: 3px solid rgb(216, 4, 4);
+        }
+        div#c1{
+            background-color: blue;
+            position: relative;
+            top: 20px;
+            left: 30px;
+        }
+        div#c2{
+            background-color: yellow;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Position relative</h1>
+    <div id="principal">
+        <div id="c1"></div>
+        <div id="c2"></div>
+    </div>
+    <p>O position relative quando colocado em um elemento libera 4 novas funções para esse elemento: top, left, right, bottom. E vc pode modificar no elemento sem que ele interfira em outros elementos do site</p>
+</body>
+</html>
