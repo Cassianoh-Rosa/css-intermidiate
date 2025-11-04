@@ -46,7 +46,9 @@ Grande telas: acima de 1200px
         display: none;
     }
 }
-@media screen and (min-width:768px) and (max-width:992px){
+@media screen and (min-width:768px) and (max-width:992px)
+/* css para telas que tem uma largura mínima de 768px e tem um máximo de 992px de largura */
+{
     body{
     background-image:url('../imagens/back-tablet.jpg');
     }
