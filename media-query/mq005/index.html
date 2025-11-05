@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <menu>
-            <ul>
+        <span class="material-symbols-outlined" id="burguer" onclick="clicou()">menu</span>
+        <menu id="list">
+            <ul >
                 <li>
                     <a href="#">Opção1</a>
                 </li>
@@ -40,5 +42,16 @@
             </p>
         </article>
     </main>
+    <script>
+        function clicou(){
+            var lista = document.getElementById('list')
+            if(lista.style.display == 'none'){
+                lista.style.display = 'block'
+            } else {
+                lista.style.display = 'none'
+            }
+            
+        }
+    </script>
 </body>
 </html>
