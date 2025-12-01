@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alinhamentos</title>
 </head>
+<style>
+    div.container{
+        background-color: lightblue;
+        padding: 0px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    div.item{
+        background-color: coral;
+        border: 1px solid black;
+        text-align: center;
+    }
+</style>
 <body>
     <!-- 
     JUSTIFY-CONTENT:(ele sempre vai se localizar pelo eixo principal que é a direção do conteúdo)
@@ -21,5 +37,25 @@
 
     6. space-around: o espaço entre os itens é igual, mas o espaço do começo e do fim é a metade do espaço entre os itens
     -->
+
+    <!-- 
+    ALIGN-ITEMS:
+    1.stretch:vai esticar o elemento do começo do eixo transversal até o final
+
+    2. start: vai deixar o elemento no começo do eixo transversal
+
+    3. end: vai deixar o elemento no final do eixo transversal
+
+    4. center: deixa no meio -->
+    
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
 </body>
 </html>
