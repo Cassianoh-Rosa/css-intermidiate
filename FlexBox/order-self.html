@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>order</title>
+    <!-- a ordem padrão em um elemento dentro de um container flex é 0 -->
+    <!-- se dois elementos tiverem a mesma ordem, o elemento que foi posto primeiro no html prevalece. -->
+    <!-- ---------------ALIGN-SELF----------------------->
+    <!-- se localiza pelo eixo transversal -->
+    <!-- auto: pega o align items ou o align content do pai -->
+    <!-- flex-start: alinha no início do eixo transversal -->
+    <!-- flex-end: alinha no final do eixo transversal -->
+    <!-- center: alinha no centro do eixo transversal -->
+    <!-- stretch: se estica do começo ao fim dp eixo transversal -->
+
+</head>
+<style>
+    div.container{
+        background-color: lightblue;
+        flex-flow: row nowrap;
+        padding: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        height: 100px;
+        align-items: start;
+    }
+    div.item{
+        background-color: coral;
+        border: 1px solid black;
+        text-align: center;
+        padding: 20px;
+    }
+    div#a{
+        order: -1;
+        align-self: stretch;
+    }
+    div#b{
+        order: -1;
+        align-self: auto;
+    }
+    div#c{
+        order: -1;
+        align-self: start;
+    }
+    div#d{
+        order: -1;
+        align-self: end;
+    }
+    div#e{
+        order: -1;
+        align-self: center;
+    }
+    div#f{
+        order: -1;
+        align-self: stretch;
+    }
+    div#g{
+        order: -1;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item" id="a">A</div>
+        <div class="item" id="b">B</div>
+        <div class="item" id="c">C</div>
+        <div class="item" id="d">D</div>
+        <div class="item" id="e">E</div>
+        <div class="item" id="f">F</div>
+        <div class="item" id="g">G</div>
+    </div>
+</body>
+</html>
