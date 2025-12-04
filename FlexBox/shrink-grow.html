@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- FLEX-SHRINK/GROW
+---------------------------------------------------------
+    flex-shrink: define a capacidade do item de encolher, caso necessário. (padrão: 1)
+    flex-grow: define a capacidade do item de crescer, caso necessário. (padrão: 0)
+
+    (se o valor for maior que 0, vc ativa o crescimento/encolhimento extra)
+---------------------------------------------------------
+ -->
+<style>
+    div.container{
+        background-color: lightblue;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    div.item{
+        background-color: coral;
+        border: 1px solid black;
+        text-align: center;
+        flex-basis: 150px;
+    }
+    div#a{
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+    div#b{
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+    div#c{
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item" id="a">A</div>
+        <div class="item" id="b">B</div>
+        <div class="item" id="c">C</div>
+    </div>
+</body>
+</html>
