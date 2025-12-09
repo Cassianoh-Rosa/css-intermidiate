@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shorthand</title>
 </head>
 <!-- FLEX-SHRINK/GROW
 ---------------------------------------------------------
@@ -13,8 +13,12 @@
     (se o valor for maior que 0, vc ativa o crescimento/encolhimento extra)
 ---------------------------------------------------------
  -->
-<!-- ------------SHORT-HAND------------------------- 
- flex: flex-grow + flex-shrink + flex-basis-->
+<!-- ------------SHORT-HANDS------------------------- 
+ flex: flex-grow + flex-shrink + flex-basis
+ 
+ "flex:initial" = flex: 0 1 auto
+ "flex: none" = flex: 0 0 auto
+ "flex: auto" = flex: 1 1 auto -->
 <style>
     div.container{
         background-color: lightblue;
@@ -25,19 +29,15 @@
         background-color: coral;
         border: 1px solid black;
         text-align: center;
-        flex-basis: 150px;
     }
     div#a{
-        flex-shrink: 0;
-        flex-grow: 0;
+        flex: 1 0 250px;
     }
     div#b{
-        flex-shrink: 0;
-        flex-grow: 0;
+        flex: 1 1 250px;
     }
     div#c{
-        flex-shrink: 0;
-        flex-grow: 0;
+        flex: 1 8 250px
     }
 </style>
 <body>
