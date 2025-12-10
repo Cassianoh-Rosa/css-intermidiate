@@ -14,20 +14,52 @@
             background-color: chocolate;
             color: white;
             border: 2px dotted black;
+            display: flex;
+            justify-content: space-between;
+            flex-flow: row wrap;
+        }
+        h1{
+            border: 2px dotted black;
+            flex-basis: 200px;
+            flex-shrink: 0;
         }
         nav{
+            display: flex;
             border: 2px dotted black;
             background-color: darkorange;
+            align-items: center;
         }
         nav a{
+            color: white;
             margin: 5px;
+            padding: 10px;
+            background-color: crimson;
+            border-radius: 10px;
+            text-align: center;
+        }
+        @media screen and (max-width: 400px){
+            header{
+                flex-direction: column;
+                align-items: center;
+            }
+            html{
+                background-color:darkorange ;
+            }
+            nav{
+                flex-direction: column;
+                width: 100vw;
+                align-items: stretch;
+            }
+            h1{
+                flex-basis: 100px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>testando essa merda</h1>
-        <nav>
+        <h1 class="son">testando essa merda</h1>
+        <nav class="son">
             <a href="#">link1</a>
             <a href="#">link2</a>
             <a href="#">link3</a>
