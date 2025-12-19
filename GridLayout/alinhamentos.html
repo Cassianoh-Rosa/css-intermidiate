@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamnetos horizontais/verticais</title>
+</head>
+<style>
+    .container{
+        height: 250px;
+        display: grid;
+        border: 2px solid red;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        gap: 10px;
+        align-items:normal ;
+        justify-items:normal ;
+        align-content: normal;
+        justify-content: normal;
+    }
+    .card{
+        border: 2px solid blue;
+    }
+</style>
+<body>
+    <main class="container">
+        <div class="card">A</div>
+        <div class="card">B</div>
+        <div class="card">C</div>
+        <div class="card">D</div>
+        <div class="card">E</div>
+        <div class="card">F</div>
+        <div class="card">F</div>
+    </main>
+</body>
+</html>

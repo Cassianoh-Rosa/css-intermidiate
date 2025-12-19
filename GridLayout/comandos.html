@@ -35,6 +35,10 @@ grid-template-rows: define o número e o tamanho das linhas do grid.
 
 grid-gap: define o espaço entre os grid items.
 
+grid-auto-row: define o tamanho automatico da altura de uma linha se for adicionada mais uma extra
+
+grid-auto-collumn: define o tamanho da largura de uma coluna caso for adicionado mais um item extra
+
 -------------  ALINHAMENTOS  -------------
 (SEPRE QUANDO FOR "ALIGN-..." O ALINHAMENTO É VERTICAL)
 (SEPRE QUANDO FOR "JUSTIFY-..." O ALINHAMENTO É HORIZONTAL)
@@ -46,6 +50,27 @@ justify-items:vai alinhar horizontalmente o item de dentro de um quadradinho do 
 align-content:vai alinhar verticalmente todos os quadrados(grids items) dentro do container *padrão é "stretch".
 
 justify-content:vai alinhar horizontalmente todos os quadrados(grids items) dentro do container *padrão é "stretch".
+
+----------------SHORT HANDS------------------
+place-items: align-items + justify-items.
+
+place-content: align-content + justify-content
+
+grid-template: grid-template-rows / grid-auto-collumn
+
+*Quando usar o comando "grid-template-columns/row podemos colocar um repeat dentro dele para simplificar as coisas.
+
+EX: grid grid-template-columns: 100px 100px 100px"(criou 3 colunas de 100px de largura)
+                  |
+                \ |  /
+                  \ /
+grid-template-columns: repeat(3, 100px)(criou 3 colunas de 100)
+
+-------------EXTRAS--------------------------
+
+*O VALOR DE FRAÇÃO EM UMA COLUNA OU LINHA PARA DELIMITAR O TAMANHO:
+digamos que eu tenha um container grid de 150px, e no css eu colocar assim: grid-template-columns: 1fr 1fr 1fr ( no total temos 3 frações de 1, então ele vai pegar o valor do container e dividir por 3. então cada item vai ter 50px )
+(outro exemplo é: grid-template-columns: 1fr 2fr 1fr;(ele vai pegar os 4fr e dividir pelo valor do container que vai dar 37,5px cada, mas o segundo vai ter o dobro desse valor))
 -->
 </body>
 </html>
