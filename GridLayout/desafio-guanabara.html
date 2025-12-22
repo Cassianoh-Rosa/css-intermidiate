@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site grid</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body{
+        display: grid;
+        grid-template: repeat(7, 100px) / repeat(6, 1fr);
+    }
+    header{
+        padding: 10px;
+        grid-row:1 / 2;
+        grid-column: 1/-1;
+        background-color: rgb(76, 76, 182);
+        color: white;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav{
+        grid-row:2/3;
+        grid-column:1/-1;
+        background-color: rgb(36, 36, 97);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    main{
+        grid-area: 3/1/6/-3;
+        background-color: lightgray;
+        padding: 10px;
+    }
+    main p{
+        margin-top: 50px;
+    }
+    section{
+        grid-area: 3/-3/6/-1;
+        padding: 10px;
+    }
+    footer{
+        grid-area: -2/1/-1/-1;
+        background-color: purple;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<body class="container">
+    <header>
+        <h1>Testando sites em grid</h1>
+        <p>Quero me matar</p>
+    </header>
+    <nav>
+        <a href="#">Link1</a>
+        <a href="#">Link2</a>
+        <a href="#">Link3</a>
+        <a href="#">Link4</a>
+    </nav>
+    <main>
+        <h2>Qual o meu problema?</h2>
+        <p>
+            Eu quero morrer, não quero mais viver, quero morrer de forma rápida, sem dor, sem culpa, só quero acabar com essa dor. Quero parar de me importar com tudo, só quero paz.
+        </p>
+    </main>
+    <section>
+        <form action="sla.php" method="post">
+            <div>
+                <label for="inome">Nome:</label> <br>
+                <input type="text" name="nome" id="inome">
+            </div>
+
+            <div>
+                <label for="iemail">email:</label> <br>
+                <input type="email" name="email" id="iemail">
+            </div>
+
+            <div>
+                <label for="isenha">Senha:</label> <br>
+                <input type="password" name="senha" id="isenha">
+            </div>
+
+            <div>
+                <label for="imsg">Mensagem:</label> <br>
+                <textarea name="msg" id="imsg"></textarea>
+            </div>
+
+            <div>
+                <input type="reset" value="Limpar">
+                <input type="submit" value="enviar">
+            </div>
+        </form>
+    </section>
+    <footer>
+        <p>
+            Por favor alguém me ajuda, eu não aguento mais viver assim
+        </p>
+    </footer>
+</body>
+</html>
